@@ -7,20 +7,38 @@
     <groupId>com.example</groupId>
     <artifactId>mars-rovers-simple-simulator</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>${mavenCompiler.version}</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
             </plugin>
+            <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+                <version>${mavenJar.version}</version>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <addClasspath>true</addClasspath>
+                        <mainClass>MarsRoverApplication</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+            </plugin>
         </plugins>
     </build>
 
     <properties>
+        <mavenJar.version>3.0.2</mavenJar.version>
+        <mavenCompiler.version>3.6.1</mavenCompiler.version>
         <yaml.version>1.17</yaml.version>
         <mockito.version>1.10.19</mockito.version>
         <junit.version>4.11</junit.version>
