@@ -11,9 +11,9 @@ without moving from its current spot. 'M' means move forward one grid point, and
     
 Input Type | Format | Description |
 --- | --- | --- |
-UPPER_RIGHT_HAND_CORNER_COORDINATES | (x, y) | Determines the size of the grid. This must be on the first line and can only be specified once |
-INITIAL_ROVER_POSITION | (x, y, [N, S, E, W]) | Rover's starting position |
-ROVER_COMMAND_STRING | [L, R, M] | Movement commands for the corresponding rover. This input has to follow a rover initial placement input. One can specify as many rovers and rover commands as needed|
+UPPER_RIGHT_HAND_CORNER_COORDINATES | (x,y) | Determines the size of the grid. This must be on the first line and can only be specified once |
+INITIAL_ROVER_POSITION | (x,y,[N,S,E,W]) | Rover's starting position |
+ROVER_COMMAND_STRING | [L,R,M] | Movement commands for the corresponding rover. This input has to follow a rover initial placement input. One can specify as many rovers and rover commands as needed|
 
 Sample Input Example
 ---
