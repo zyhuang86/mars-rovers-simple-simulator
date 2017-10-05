@@ -31,4 +31,4 @@ To compile and build, run the following command at the root folder
     
 To run, provide it with a path to the file containing all the inputs. 
     
-    java -jar mars-rovers-simple-simulator-1.0.0-SNAPSHOT.jar inputFilePath
+    mvn exec:java -Dexec.args="path to input file"
